@@ -1,2 +1,2 @@
-# car-benchmarking-tool
+Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch
 car benchmarking tool
