@@ -1,0 +1,39 @@
+---
+title: "Car Benchmarking tool"
+author: "Ankit Upadhyay"
+date: "November 25, 2020"
+output:
+   slidy_presentation:
+    widescreen: yes
+    smaller: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This is a benchmarking application to help us determine which car performs economically best based on car characteristics(horsepower, displacement, # of cylinders, Transmission) and trip info (such as cost of petrol/diesel and price). Based on this info, the table will show the best available option.
+
+---
+
+## How it works?
+
+The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models). We can look to some characteristics of the data:
+
+
+```{r}
+head(mtcars)
+```
+
+---
+
+# Plot
+
+Here we can see the relationship between three variables: miles per gallon (mpg), displacement (disp) and weight (wt).
+
+```{r}
+library(car)
+scatterplotMatrix(~mpg+disp+wt, data=mtcars, cex.axis=1.5)
+```

@@ -1,0 +1,10 @@
+---
+title: "About the tool"
+output: html_document
+---
+
+
+
+This is a benchmarking application to help us determine which car performs economically best based on car characteristics(horsepower, displacement, # of cylinders, Transmission) and trip info (such as cost of petrol/diesel and price). Based on this info, the table will show the best available option.
+
+Source code for ui.R and server.R files are available on the GitHub.
